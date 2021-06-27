@@ -2,11 +2,10 @@
     //Calculating total amount including interest over specific period
 function compute()
     { 
-       var principal = document.getElementById("principal").value
+       var principal = document.getElementById("principal").value;
        var rate = document.getElementById("rate").value;
        var years = document.getElementById ("years").value;
        var year = new Date().getFullYear()+parseInt(years);
-       var result = document.getElementById("result").value;
        var interest = parseInt(principal) * parseInt(years) * (rate /100);
        var amount = interest; 
         if (validateAmount()){
@@ -34,10 +33,9 @@ function validateAmount()
     }
 
     //Revealing % value for each movement along the slider
-        var slider = document.getElementById("slider")
+        var rate = document.getElementById("rate")
         var output = document.getElementById("rate_val");
-        console.log("in here")
-        slider.oninput = function() {
+        rate.oninput = function() {
             output.innerHTML = this.value;
         }
     

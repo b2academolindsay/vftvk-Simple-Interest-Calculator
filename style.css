@@ -1,14 +1,21 @@
 body {background-color:black;font-family: Arial;color: white;}
 
-h1{color:grey;font-family: Verdana;justify-content: center; ;}
+h1{color:grey;font-family: Verdana;justify-content: center; margin-left: 50px;}
 
 .maindiv {
     background-color:white;
     color:black;
-    width:300px;
+    width:600px;
     padding:20px;
     border-radius:25px;
+    align:center;
     margin: auto;
+}
 
+.ratio{
+    margin-left: 125px;
+}
 
+#footnote {
+    margin-left: 50px;
 }
